@@ -240,13 +240,13 @@ body {
   color: #494e52;
   font-size: 1.8em;
   line-height: 1.5;
-  font-family: "Times New Roman", FangSong, STFangsong, sans-serif;
+  font-family: sans-serif, "Times New Roman", FangSong, STFangsong;
   scroll-behavior: smooth;
 }
 a,
 span,
 .btn {
-  font-family: "Times New Roman", FangSong, STFangsong, sans-serif;
+  font-family: sans-serif, "Times New Roman", FangSong, STFangsong;
 }
 img {
   max-width: 100%;
@@ -463,7 +463,7 @@ blockquote p {
   font-size: 1.8rem;
 }
 .page article a {
-  color: #494e52;
+  color: #800080;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -486,7 +486,7 @@ blockquote p {
   text-align: right;
 }
 .page article code {
-  font-family: "Times New Roman", FangSong, STFangsong, sans-serif;
+  font-family: sans-serif, "Times New Roman", FangSong, STFangsong;
   padding: 0.2rem 0.3rem;
   background: rgba(27,31,35,0.05);
   word-wrap: break-word;
