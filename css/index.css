@@ -480,7 +480,9 @@ blockquote p {
   font-size: 2.8rem;
 }
 .page article h3 {
-  font-size: 2.6rem;
+  font-size: 2rem;
+  margin-bottom: -20px;
+  color: #00f;
 }
 .page article p,
 .page article li {

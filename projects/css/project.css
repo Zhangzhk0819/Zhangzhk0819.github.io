@@ -291,12 +291,21 @@ li.grid {
     border-right: 1px solid #e0e5fa;
     border-bottom: 1px solid #e0e5fa;
     transition: transform .5s ease;
+
 }
 
-.info-collection {
+.col a img:hover {
+    transform: scale(1.2);
+}
+
+.res-collection {
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: flex-start;
+}
+
+.framework {
+    margin-top: 50px;
 }
