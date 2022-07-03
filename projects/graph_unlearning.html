@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Graph Unlearning</title>
+  <link rel="stylesheet" href="./css/css" />
+  <link rel="stylesheet" href="./css/iconize.css" />
+  <link rel="stylesheet" href="./css/project.css" />
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      <div class="section head">
+        <h1> <a href="https://arxiv.org/abs/2103.14991">Graph Unlearning </a></h1>
+        <h2>CCS 2022</h2>
+        <div class="authors"> <a href="https://milkigit.github.io/">Min Chen</a><sup>1</sup>
+          <tab> </tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>1</sup><a href="https://tianhao.wang/">Tianhao
+            Wang</a><sup>2</sup>
+          <tab></tab><a href="https://cispa.de/en/people/backes">Michael Backes</a><sup>1</sup>
+          <tab></tab><a href="https://www.mhumbert.com/">Mathias Humbert</a><sup>3</sup>
+          <tab></tab><a href="https://yangzhangalmo.github.io/">Yang Zhang</a><sup>1</sup>
+        </div>
+        <div class="affiliations">1. CISPA Helmholtz for Information Security 2. University of Virginia 3. University of
+          Laussane</div>
+      </div>
+      <center> <img src="./graph_unlearning/unlearning_pipeline.jpeg" width="90%" /></center>
+      <div class="section abstract">
+        <h2>Abstract</h2><br />
+        <p>
+          The right to be forgotten states that a data subject has the right to erase their data from an entity storing
+          it. In the context of machine learning (ML), it requires the ML model provider to remove the data subject's
+          data from the training set used to build the ML model, a process known as \textit{machine unlearning}. While
+          straightforward and legitimate, retraining the ML model from scratch upon receiving unlearning requests incurs
+          high computational overhead when the training set is large. To address this issue, a number of approximate
+          algorithms have been proposed in the domain of image and text data, among which SISA is the state-of-the-art
+          solution. It randomly partitions the training set into multiple shards and trains a constituent model for each
+          shard. However, directly applying SISA to the graph data can severely damage the graph structural information,
+          and thereby the resulting ML model utility. In this paper, we propose GraphEraser, a novel machine unlearning
+          method tailored to graph data. Its contributions include two novel graph partition algorithms, and a
+          learning-based aggregation method. We conduct extensive experiments on five real-world datasets to illustrate
+          the unlearning efficiency and model utility of GraphEraser. We observe that GraphEraser achieves 2.06× (small
+          dataset) to 35.94× (large dataset) unlearning time improvement compared to retraining from scratch. On the
+          other hand, GraphEraser achieves up to 62.5% higher F1 score than that of random partitioning. In addition,
+          our proposed learning-based aggregation method achieves up to 112% higher F1 score than that of the majority
+          vote aggregation.</p>
+      </div>
+      <div class="section citation">
+        <h2>Citation </h2>
+        <div class="section bibtex">
+          <pre> @inproceedings{CZWBHZ21b,
+author = {Min Chen and Zhikun Zhang and Tianhao Wang and Michael Backes and Mathias Humbert and Yang Zhang},
+title = {{Graph Unlearning}},
+booktitle = {{ACM CCS}},
+publisher = {},
+year = {2022},
+}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
