@@ -1,8 +1,8 @@
 $(function () {
     // resize window
     $(window).resize(function () {
-        if ($(window).width() < 1280 && $(window).width()>540) {
-            $(".page").css({"width": $(window).width() - $(".side-card").width() - 90, "float": "left"})
+        if ($(window).width() < 1280 && $(window).width() > 540) {
+            $(".page").css({ "width": $(window).width() - $(".side-card").width() - 90, "float": "left" })
         } else {
             $(".page").removeAttr("style")
         }
@@ -33,13 +33,13 @@ $(function () {
         }
     })
 
-    $(document).click(function(e){
+    $(document).click(function (e) {
         var target = $(e.target);
-        if(target.closest(".nav").length != 0) return;
+        if (target.closest(".nav").length != 0) return;
         $(".nav").removeClass("nav-open").addClass("nav-close")
-        if(target.closest(".author-links").length != 0) return;
+        if (target.closest(".author-links").length != 0) return;
         $(".author-links").removeClass("is-open").addClass("is-close")
-        if((target.closest(".menus_icon").length != 0) || (target.closest(".menus_items").length != 0)) return;
+        if ((target.closest(".menus_icon").length != 0) || (target.closest(".menus_items").length != 0)) return;
         $(".header_wrap").removeClass("menus-open").addClass("menus-close")
     })
 
@@ -62,17 +62,17 @@ $(function () {
     });
 
     // pjax
-    $(document).pjax('a[target!=_blank]','.page', {
+    $(document).pjax('a[target!=_blank]', '.page', {
         fragment: '.page',
         timeout: 5000
     });
     $(document).on({
-        'pjax:click': function() {
+        'pjax:click': function () {
             $('body,html').animate({
                 scrollTop: 0,
             }, 700);
         },
-        'pjax:end': function() {
+        'pjax:end': function () {
             if ($(".header_wrap").hasClass("menus-open")) {
                 $(".header_wrap").removeClass("menus-open").addClass("menus-close")
             }
@@ -100,5 +100,10 @@ $(function () {
             }
         });
     });
+
+    $(function () {
+        $('h3 a').attr('target', '_blank');
+        $('h3 a').attr('target', '_blank');
+    })
 
 })
