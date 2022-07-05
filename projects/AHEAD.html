@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>AHEAD</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="https://arxiv.org/abs/2110.07505">AHEAD: Adaptive Hierarchical Decomposition for Range Query under Local Differential Privacy</a></h1>
+          <h2><a href="https://www.sigsac.org/ccs/CCS2021/">ACM CCS 2021</a></h2>
+          <div class="authors"><a href="https://www.linkangd.info/">Linkang Du</a><sup>1</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>2</sup>
+            <tab></tab><a href="">Shaojie Bai</a><sup>1</sup>
+            <tab></tab><a href="">Changchang Liu</a><sup>3</sup>
+            <tab></tab><a href="https://nesa.zju.edu.cn/webpage/crew/jsl.html">Shouling Ji</a><sup>1</sup>
+            <tab></tab><a href="https://person.zju.edu.cn/en/cp">Peng Cheng</a><sup>1</sup>
+            <tab></tab><a href="https://person.zju.edu.cn/en/jmchen">Jiming Chen</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. Zhejiang University 2. CISPA Helmholtz Center for Information Security 3. IBM Research </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/AHEAD/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>For protecting users' private data, local differential privacy (LDP) has been leveraged to provide the privacy-preserving range query, thus supporting further statistical analysis. However, existing LDP-based range query approaches are limited by their properties, i.e., collecting user data according to a pre-defined structure. These static frameworks would incur excessive noise added to the aggregated data especially in the low privacy budget setting. In this work, we propose an Adaptive Hierarchical Decomposition (AHEAD) protocol, which adaptively and dynamically controls the built tree structure, so that the injected noise is well controlled for maintaining high utility. Furthermore, we derive a guideline for properly choosing parameters for AHEAD so that the overall utility can be consistently competitive while rigorously satisfying LDP. Leveraging multiple real and synthetic datasets, we extensively show the effectiveness of AHEAD in both low and high dimensional range query scenarios, as well as its advantages over the state-of-the-art methods. In addition, we provide a series of useful observations for deploying AHEAD in practice.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><a class="res-link" href="./projects/AHEAD/AHEAD.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+            <div class="col"><a class="res-link" href="https://arxiv.org/abs/2110.07505"><img class="res-img" src="./img/ArXiv_logo.png"/></a></div>
+            <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><a class="res-link" href="https://www.youtube.com/watch?v=Xt22CbCjdjU"><img class="res-img" src="./img/YouTube_logo.jpeg"/></a></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{DZBLJCC21,
+    authors = {Linkang Du and Zhikun Zhang and Shaojie Bai and Changchang Liu and Shouling Ji and Peng Cheng and Jiming Chen},
+    title = {{AHEAD: Adaptive Hierarchical Decomposition for Range Query under Local Differential Privacy}},
+    booktitle = {{ACM CCS}},
+    publisher = {},
+    year = {2021},
+    }</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>

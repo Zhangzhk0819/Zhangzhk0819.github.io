@@ -1,0 +1,64 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>ML Doctor</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="https://arxiv.org/abs/2102.02551">ML-Doctor: Holistic Risk Assessment of Inference Attacks Against Machine Learning Models</a></h1>
+          <h2><a href="https://www.usenix.org/conference/usenixsecurity22">USENIX Security 2022</a></h2>
+          <div class="authors"><a href="https://liu.ai/">Yugeng Liu</a><sup>1</sup>
+            <tab></tab><a href="https://wenruiustc.github.io/">Rui Wen</a><sup>1</sup>
+            <tab></tab><a href="https://willingnesshxl.github.io/xlhe/">Xinlei He</a><sup>1</sup>
+            <tab></tab><a href="https://ahmedsalem2.github.io/">Ahmed Salem</a><sup>1</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>1</sup>
+            <tab></tab><a href="https://cispa.de/en/people/backes">Michael Backes</a><sup>1</sup>
+            <tab></tab><a href="https://emilianodc.com/">Emiliano De Cristofaro</a><sup>2</sup>
+            <tab></tab><a href="https://cispa.de/en/people/mario.fritz">Mario Fritz</a><sup>1</sup>
+            <tab></tab><a href="https://yangzhangalmo.github.io/">Yang Zhang</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. CISPA Helmholtz Center for Information Security 2. University College London </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/ml_doctor/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>Inference attacks against Machine Learning (ML) models allow adversaries to learn sensitive information about training data, model parameters, etc. While researchers have studied, in depth, several kinds of attacks, they have done so in isolation. As a result, we lack a comprehensive picture of the risks caused by the attacks, e.g., the different scenarios they can be applied to, the common factors that influence their performance, the relationship among them, or the effectiveness of possible defenses. In this paper, we fill this gap by presenting a first-of-its-kind holistic risk assessment of different inference attacks against machine learning models. We concentrate on four attacks -- namely, membership inference, model inversion, attribute inference, and model stealing -- and establish a threat model taxonomy.Our extensive experimental evaluation, run on five model architectures and four image datasets, shows that the complexity of the training dataset plays an important role with respect to the attack's performance, while the effectiveness of model stealing and membership inference attacks are negatively correlated. We also show that defenses like DP-SGD and Knowledge Distillation can only mitigate some of the inference attacks. Our analysis relies on a modular re-usable software, ML-Doctor, which enables ML model owners to assess the risks of deploying their models, and equally serves as a benchmark tool for researchers and practitioners.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><a class="res-link" href="./projects/ml_doctor/ml_doctor.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+            <div class="col"><a class="res-link" href="https://arxiv.org/abs/2102.02551"><img class="res-img" src="./img/ArXiv_logo.png"/></a></div>
+            <div class="col"><a class="res-link" href="https://github.com/liuyugeng/ML-Doctor"><img class="res-img" src="./img/GitHub_logo.jpeg"/></a></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><a class="res-link" href="https://mp.weixin.qq.com/s/scTRDM8pSjKoc0xCGuir7Q"><img class="res-img" src="./img/WeChat_logo.jpeg"/></a></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{LWHSZBCFZ22,
+    authors = {Yugeng Liu and Rui Wen and Xinlei He and Ahmed Salem and Zhikun Zhang and Michael Backes and Emiliano De Cristofaro and Mario Fritz and Yang Zhang},
+    title = {{ML-Doctor: Holistic Risk Assessment of Inference Attacks Against Machine Learning Models}},
+    booktitle = {{USENIX Security}},
+    publisher = {},
+    year = {2022},
+    }</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>
