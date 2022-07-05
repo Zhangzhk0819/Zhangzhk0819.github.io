@@ -1,0 +1,59 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>REAP</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="https://arxiv.org/abs/1711.00757">REAP: An Efficient Incentive Mechanism for Reconciling Aggregation Accuracy and Individual Privacy in Crowdsensing</a></h1>
+          <h2><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10206">IEEE Transactions on Information Forensics and Security (TIFS) 2018</a></h2>
+          <div class="authors"><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>1</sup>
+            <tab></tab><a href="https://person.zju.edu.cn/en/shibohe">Shibo He</a><sup>1</sup>
+            <tab></tab><a href="https://isearch.asu.edu/profile/284251">Junshan Zhang</a><sup>2</sup>
+            <tab></tab><a href="https://person.zju.edu.cn/en/jmchen">Jiming Chen</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. Zhejiang University 2. Arizona State University </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/REAP/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>Incentive mechanism plays a critical role in privacy-aware crowdsensing. Most previous studies on co-design of incentive mechanism and privacy preservation assume a trustworthy fusion center (FC). Very recent work has taken steps to relax the assumption on trustworthy FC and allows participatory users (PUs) to add well calibrated noise to their raw sensing data before reporting them, whereas the focus is on the equilibrium behavior of data subjects with binary data. Making a paradigm shift, this paper aim to quantify the privacy compensation for continuous data sensing while allowing FC to directly control PUs. There are two conflicting objectives in such scenario: FC desires better quality data in order to achieve higher aggregation accuracy whereas PUs prefer adding larger noise for higher privacy-preserving levels (PPLs). To achieve a good balance therein, we design an efficient incentive mechanism to REconcile FC's Aggregation accuracy and individual PU's data Privacy (REAP). Specifically, we adopt the celebrated notion of differential privacy to measure PUs' PPLs and quantify their impacts on FC's aggregation accuracy. Then, appealing to Contract Theory, we design an incentive mechanism to maximize FC's aggregation accuracy under a given budget. The proposed incentive mechanism offers different contracts to PUs with different privacy preferences, by which FC can directly control PUs. It can further overcome the information asymmetry, i.e., the FC typically does not know each PU's precise privacy preference. We derive closed-form solutions for the optimal contracts in both complete information and incomplete information scenarios. Further, the results are generalized to the continuous case where PUs' privacy preferences take values in a continuous domain. Extensive simulations are provided to validate the feasibility and advantages of our proposed incentive mechanism.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><a class="res-link" href="./projects/REAP/REAP.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+            <div class="col"><a class="res-link" href="https://arxiv.org/abs/1711.00757"><img class="res-img" src="./img/ArXiv_logo.png"/></a></div>
+            <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{ZHZC18,
+    authors = {Zhikun Zhang and Shibo He and Junshan Zhang and Jiming Chen},
+    title = {{REAP: An Efficient Incentive Mechanism for Reconciling Aggregation Accuracy and Individual Privacy in Crowdsensing}},
+    booktitle = {{IEEE Transactions on Information Forensics and Security (TIFS)}},
+    publisher = {},
+    year = {2018},
+    }</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>
