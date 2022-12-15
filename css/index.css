@@ -489,7 +489,7 @@ blockquote p {
   font-size: 1.8rem;
 }
 .page article a {
-  color: #800080;
+  color: #00f;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
