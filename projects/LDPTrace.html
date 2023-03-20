@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>LDPTrace</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="https://arxiv.org/abs/2302.06180">LDPTrace: Locally Differentially Private Trajectory Synthesis</a></h1>
+          <h2><a href="https://vldb.org/2023/">VLDB 2023</a></h2>
+          <div class="authors"><a href="https://zealscott.com/">Yuntao Du</a><sup>1</sup>
+            <tab></tab><a href="">Yujia Hu</a><sup>1</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>2</sup>
+            <tab></tab><a href="">Ziquan Fang</a><sup>1</sup>
+            <tab></tab><a href="">Lu Chen</a><sup>1</sup>
+            <tab></tab><a href="https://scholar.google.com.sg/citations?user=o5k9wxUAAAAJ&amp;hl=en">Baihua Zheng</a><sup>3</sup>
+            <tab></tab><a href="https://person.zju.edu.cn/en/gaoyj_en">Yunjun Gao</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. Zhejiang University 2. Stanford University 3. Singapore Management University </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/LDPTrace/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>Trajectory data is beneficial for many real-world applications, such as monitoring the spread of the disease through people’s movement patterns and tailoring to location-based services with population’s travel preference. However, public concerns over privacy and data protection have limited the extent to which this data is shared and exploited. Local differential privacy enables people to share a perturbed version of their data, which is an ideal technique for privacy since no one except data owners keeps the real data. Nonetheless, existing point-based perturbation mechanisms are not applicable to real-world scenarios because of poor utility, external knowledge dependence, expensive computational overhead, and vulnerability to attacks. To address these drawbacks, we propose the first locally differentially private trajectory synthesis framework, called LDPTrace, which mainly considers three important patterns estimated from synthesize trajectories that are highly similar to real trajectories with little computational cost. We also present a new method to help select a proper grid granularity without consuming privacy budget. Extensive experiments, using real-world data, a series of utility metrics and attacks, demonstrate the effectiveness and efficiency of LDPTrace.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><img class="res-img" src="./img/PDF_logo.jpeg"/></div>
+            <div class="col"><a class="res-link" href="https://arxiv.org/abs/2302.06180"><img class="res-img" src="./img/ArXiv_logo.png"/></a></div>
+            <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{DHZFCZG23,
+    author = {Yuntao Du and Yujia Hu and Zhikun Zhang and Ziquan Fang and Lu Chen and Baihua Zheng and Yunjun Gao},
+    title = {{LDPTrace: Locally Differentially Private Trajectory Synthesis}},
+    booktitle = {{VLDB}},
+    publisher = {},
+    year = {2023},
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>
