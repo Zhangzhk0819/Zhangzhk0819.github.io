@@ -1,0 +1,60 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>FACE-AUDITOR</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="">FACE-AUDITOR: Data Auditing in Facial Recognition Systems</a></h1>
+          <h2><a href="https://www.usenix.org/conference/usenixsecurity23">USENIX Security 2023</a></h2>
+          <div class="authors"><a href="https://milkigit.github.io/">Min Chen</a><sup>1</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>1</sup>
+            <tab></tab><a href="https://tianhao.wang/">Tianhao Wang</a><sup>2</sup>
+            <tab></tab><a href="https://cispa.de/en/people/backes">Michael Backes</a><sup>1</sup>
+            <tab></tab><a href="https://yangzhangalmo.github.io/">Yang Zhang</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. CISPA Helmholtz Center for Information Security 2. University of Virginia </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/face-auditor/pipeline.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>Few-shot-based facial recognition systems have gained increasing attention due to their scalability and ability to work with a few face images. However, the power of facial recognition systems enables anyone with moderate resources to canvas the Internet and build well-performed facial recognition models without people's awareness and consent. To prevent the face images from being misused, one straightforward approach is to modify the raw face images before sharing them, which inevitably destroys the semantic information and is still prone to adaptive attacks. In this paper, we take a different angle by advocating an auditing approach that enables normal users to detect whether their private face images are used to train a facial recognition system, which enables individual users to claim the proprietary of their face images. We formulate the auditing process as a user-level membership inference problem, and propose a complete toolkit FACE-AUDITOR that can carefully choose the probing set to query the few-shot-based facial recognition model and determine whether any of a user's face images is used in training the model. We further propose to use the similarity scores between the original face images as reference information to improve the auditing performance. Extensive experiments on multiple real-world face image datasets show that FACE-AUDITOR can achieve auditing accuracy of up to $99%$. Finally, we show that FACE-AUDITOR is robust in the presence of several perturbation mechanisms to the training images or the target models.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><img class="res-img" src="./img/PDF_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/ArXiv_logo.png"/></div>
+            <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{CZWBZ23,
+    author = {Min Chen and Zhikun Zhang and Tianhao Wang and Michael Backes and Yang Zhang},
+    title = {{FACE-AUDITOR: Data Auditing in Facial Recognition Systems}},
+    booktitle = {{USENIX Security}},
+    publisher = {},
+    year = {2023},
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>
