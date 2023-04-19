@@ -1,0 +1,63 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>DPMLBench</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="">DPMLBench: Holistic Evaluation of Differentially Private Machine Learning</a></h1>
+          <h2><a href="https://www.sigsac.org/ccs/CCS2023/">ACM CCS 2023</a></h2>
+          <div class="authors"><a href="">Chengkun Wei</a><sup>1</sup>
+            <tab></tab><a href="">Minghu Zhao</a><sup>1</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>2</sup>
+            <tab></tab><a href="https://milkigit.github.io/">Min Chen</a><sup>3</sup>
+            <tab></tab><a href="">Wenlong Meng</a><sup>1</sup>
+            <tab></tab><a href="">Bo Liu</a><sup>4</sup>
+            <tab></tab><a href="">Yuan Fan</a><sup>1</sup>
+            <tab></tab><a href="">Wenzhi Chen</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. Zhejiang University 2. Stanford University 3. CISPA Helmholtz Center for Information Security 4. Dbappsecurity </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/DPMLBench/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>Differential privacy (DP), as a rigorous mathematical definition quantifying privacy leakage, has become a well-accepted standard for privacy protection. Combined with powerful machine learning techniques, differentially private machine learning (DPML) is increasingly important. As the most classic DPML algorithms, DP-SGD incurs a significant loss of utility, which hinders DPML's deployment in practice. Many studies have recently proposed improved algorithms based on DP-SGD to mitigate utility loss. However, these studies are isolated and cannot comprehensively measure the performance of improvements proposed in algorithms. More importantly, there is a lack of comprehensive research to compare improvements in these DPML algorithms across utility, defensive capabilities, and generalizability. We fill this gap by performing a holistic measurement of improved DPML algorithms on utility and defense capability against membership inference attacks. We first present a taxonomy of where improvements are located in the machine learning life cycle. Based on taxonomy, we jointly perform an extensive measurement study of the improved DPML algorithms, over 12 algorithms, four model architectures, four datasets, two attacks, and various privacy budget configurations. We also cover state-of-the-art label differential privacy (Label DP) algorithms in the evaluation. According to empirical results, DP can effectively defend against membership inference attacks, and sensitivity-bounding techniques such as per-sample gradient clipping play an important role in defense. We also explore some improvements that can maintain model utility and defend membership inference attacks more effectively. Experiments show that Label DP algorithms achieve less utility loss but are fragile to membership inference attacks. Machine learning practitioners may benefit from these evaluations to select appropriate algorithms. To support our evaluation, we implement a modular re-usable software, DPMLBench, which enables sensitive data owners to deploy DPML algorithms and serves as a benchmark tool for researchers and practitioners.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><img class="res-img" src="./img/PDF_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/ArXiv_logo.png"/></div>
+            <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{WZZCMLFC23,
+    author = {Chengkun Wei and Minghu Zhao and Zhikun Zhang and Min Chen and Wenlong Meng and Bo Liu and Yuan Fan and Wenzhi Chen},
+    title = {{DPMLBench: Holistic Evaluation of Differentially Private Machine Learning}},
+    booktitle = {{ACM CCS}},
+    publisher = {},
+    year = {2023},
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>
