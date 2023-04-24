@@ -1,0 +1,63 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>CampER</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="">CampER: An Effective Framework for Privacy-Aware Deep Entity Resolution</a></h1>
+          <h2><a href="https://kdd.org/kdd2023/">KDD 2023</a></h2>
+          <div class="authors"><a href="">Yuxiang Guo</a><sup>1</sup>
+            <tab></tab><a href="">Lu Chen</a><sup>1</sup>
+            <tab></tab><a href="">Zhengjie Zhou</a><sup>1</sup>
+            <tab></tab><a href="https://scholar.google.com.sg/citations?user=o5k9wxUAAAAJ&amp;hl=en">Baihua Zheng</a><sup>2</sup>
+            <tab></tab><a href="">Ziquan Fang</a><sup>1</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>3</sup>
+            <tab></tab><a href="">Yuren Mao</a><sup>1</sup>
+            <tab></tab><a href="https://person.zju.edu.cn/en/gaoyj_en">Yunjun Gao</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. Zhejiang University 2. Singapore Management University 3. CISPA Helmholtz Center for Information Security </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/CampER/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>Entity Resolution (ER) is a fundamental problem in data preparation that aims to identify whether two tuples from different relations refer to the same real-world entity. Standard deep ER methods have achieved state-of-the-art effectiveness, assuming that relations from different organizations are centrally stored. However, due to privacy concerns, it can be difficult to centralize data in practice, rendering standard ER solutions inapplicable. Despite efforts to develop privacy-preserving ER methods, they often neglect subtle matching mechanisms and have poor effectiveness as a result. To bridge effectiveness and privacy, in this paper, we propose CampER, an effective framework for privacy-aware entity resolution. Specifically, we first design a training pair self-generation strategy to overcome the absence of manually labeled data in privacy-aware scenarios. Based on the self-constructed training pairs, we present a collaborative fine-tuning approach to learn the match-aware and uni-space individual tuple embeddings for accurate matching decisions. During the matching decision making process, we first introduce a cryptographically secure approach to determine matches. Furthermore, we propose an order-preserving perturbation strategy to significantly accelerate the matching computation while guaranteeing the consistency of ER results. Extensive experiments on eight widely-used benchmark datasets demonstrate that CampER not only is comparable with the state-of-the-art standard deep ER solutions in effectiveness, but also preserves privacy.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><img class="res-img" src="./img/PDF_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/ArXiv_logo.png"/></div>
+            <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{GCZZFZMG23,
+    author = {Yuxiang Guo and Lu Chen and Zhengjie Zhou and Baihua Zheng and Ziquan Fang and Zhikun Zhang and Yuren Mao and Yunjun Gao},
+    title = {{CampER: An Effective Framework for Privacy-Aware Deep Entity Resolution}},
+    booktitle = {{KDD}},
+    publisher = {},
+    year = {2023},
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>
