@@ -1,0 +1,64 @@
+<!DOCTYPE html >
+
+<html>
+<head>
+<title>WA-BiGAN</title>
+<link href="./css/css" rel="stylesheet"/>
+<link href="./css/iconize.css" rel="stylesheet"/>
+<link href="./css/project.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+</head>
+<body>
+<div id="content">
+<div id="content-inner">
+<div class="section head">
+<h1><a href="">Horizontal Multi-Party Data Publishing Under Differential Privacy Via Weight-Aware Bidirectional Generative Adversarial Networks</a></h1>
+<h2>IEEE Transactions on Knowledge and Data Engineering (TKDE) 2026</h2>
+<div class="authors"><a href="">Pengfei Zhang</a><sup>1</sup>
+<tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>2</sup>
+<tab></tab><a href="">Yang Cao</a><sup>3</sup>
+<tab></tab><a href="">Xiang Cheng</a><sup>4</sup>
+<tab></tab><a href="">Lihua Yin</a><sup>5</sup>
+<tab></tab><a href="">Puning Zhao</a><sup>6</sup>
+<tab></tab><a href="">Zhiquan Liu</a><sup>7</sup>
+<tab></tab><a href="">Li Sun</a><sup>4</sup>
+<tab></tab><a href="">Lei Shi</a><sup>8</sup>
+<tab></tab><a href="">Ji Zhang</a><sup>9</sup>
+<tab></tab>
+<div class="affiliations"></div><p>1. State Key Laboratory of Digital Intelligent Technology for Unmanned Coal Mining, School of Computer Science and Engineering, Anhui University of Science and Technology, Huainan, China 2. Zhejiang University 3. Tokyo Institute of Technology, Meguro, Japan 4. Beijing University of Posts and Telecommunications, Beijing, China 5. Cyberspace Institute of Advanced Technology, Guangzhou University, Guangzhou, China 6. Sun Yat-sen University, Guangzhou, China 7. Jinan University, Guangzhou, China 8. Communication University of China, Beijing, China 9. University of Southern Queensland, Toowoomba, QLD, Australia </p></div>
+</div>
+<div class="framework">
+<center><img src="./projects/WA-BiGAN/overview.png" width="90%"/></center>
+</div>
+<div class="section abstract">
+<h2>Abstract</h2><br/>
+<p>—Horizontal multi-party data publishing enables parties with the same attributes but different records to collaboratively share synthetic data. Generative adversarial networks (GAN) excel at cap- turing complex distributions and generating statistically consistent samples. However, existing studies treat all parties’ data equally without considering heterogeneity, approximate data distributions largely from only a single direction, and suffer from training insta- bility under limited privacy budgets. To address these limitations, we proposeMASTER, a weight-aware bidirectional GAN approach. In MASTER, each party maintains a sanitized discriminator to protect local data, while a central server coordinates two complementary generators that learn the underlying data distribution from different perspectives. Specifically, we introduce a dual-generator GAN struc- ture, where training is enhanced by simultaneously increasing the distance between the distributions of generated samples to improve diversity and reducing the discriminators’ ability to distinguish them to stabilize training and enhance sample quality. Moreover, a weight-aware fusion mechanism is designed to dynamically balance contributions from different parties and generators based on data quality, enhancing inter-party connections, generation diversity, and training stability. To compute the weights, we formulate an unsu- pervised integer programming problem and design an alternating optimization scheme. Our theoretical analysis demonstrates that MASTERmaintains comparable computational complexity to non- private settings while providing strong differential privacy and utility guarantees. Extensive experiments on four real-world datasets and one synthetic dataset showMASTER’s effectiveness.</p>
+</div>
+<div class="section info">
+<h2>Resources </h2><br/>
+<div class="res-collection">
+<div class="col"><a class="res-link" href="./projects/WA-BiGAN/WA-BiGAN.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+<div class="col"><img class="res-img" src="./img/ArXiv_logo.png"/></div>
+<div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+<div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+<div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+<div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+</div>
+</div>
+<div class="section citation">
+<h2>Citation </h2>
+<div class="section bibtex">
+<pre> @inproceedings{ZZCC26,
+    author = {Pengfei Zhang and Zhikun Zhang and Yang Cao and Xiang Cheng and Lihua Yin and Puning Zhao and Zhiquan Liu and Li Sun and Lei Shi and Ji Zhang},
+    title = {{Horizontal Multi-Party Data Publishing Under Differential Privacy Via Weight-Aware Bidirectional Generative Adversarial Networks}},
+    booktitle = {{Transactions on Knowledge and Data Engineering}},
+    publisher = {IEEE},
+    year = {2026},
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<script src="./js/script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>GradEscape</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="https://arxiv.org/abs/2506.08188">GradEscape: A Gradient-Based Evader Against AI-Generated Text Detectors</a></h1>
+          <h2>USENIX Security 2025</h2>
+          <div class="authors"><a href="">Wenlong Meng</a><sup>1</sup>
+            <tab></tab><a href="">Shuguo Fan</a><sup>1</sup>
+            <tab></tab><a href="">Chengkun Wei</a><sup>1</sup>
+            <tab></tab><a href="">Min Chen</a><sup>2</sup>
+            <tab></tab><a href="">Yuwei Li</a><sup>3,4</sup>
+            <tab></tab><a href="">Yuanchao Zhang</a><sup>5</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>1</sup>
+            <tab></tab><a href="">Wenzhi Chen</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. Zhejiang University 2. Vrije Universiteit Amsterdam 3. National University of Defense Technology 4. Anhui Province Key Laboratory of Cyberspace Security Situation Awareness and Evaluation 5. Mybank, Ant Group </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/GradEscape/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>In this paper, we introduce GradEscape, the first gradient-based evader designed to attack AI-generated text (AIGT) detectors. GradEscape overcomes the undifferentiable computation problem, caused by the discrete nature of text, by introducing a novel approach to construct weighted embeddings for the detector input. It then updates the evader model parameters using feedback from victim detectors, achieving high attack success with minimal text modification. To address the issue of tokenizer mismatch between the evader and the detector, we introduce a warm-started evader method, enabling GradEscape to adapt to detectors across any language model architecture. Moreover, we employ novel tokenizer inference and model extraction techniques, facilitating effective evasion even in query-only access. We evaluate GradEscape on four datasets and three widely-used language models, benchmarking it against four state-of-the-art AIGT evaders. Experimental results demonstrate that GradEscape outperforms existing evaders in various scenarios, including with an 11B paraphrase model, while utilizing only 139M parameters. We have successfully applied GradEscape to two real-world commercial AIGT detectors. Our analysis reveals that the primary vulnerability stems from disparity in text expression styles within the training data. We also propose a potential defense strategy to mitigate the threat of AIGT evaders. We open-source our GradEscape for developing more robust AIGT detectors.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><a class="res-link" href="./projects/GradEscape/GradEscape.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+            <div class="col"><a class="res-link" href="https://arxiv.org/abs/2506.08188"><img class="res-img" src="./img/ArXiv_logo.png"/></a></div>
+            <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{MFWCLZZC25,
+    author = {Wenlong Meng and Shuguo Fan and Chengkun Wei and Min Chen and Yuwei Li and Yuanchao Zhang and Zhikun Zhang and Wenzhi Chen},
+    title = {{GradEscape: A Gradient-Based Evader Against AI-Generated Text Detectors}},
+    booktitle = {{USENIX Security}},
+    publisher = {USENIX Association},
+    year = {2025},
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>

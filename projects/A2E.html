@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+
+<html>
+<head>
+<title>A2E</title>
+<link href="./css/css" rel="stylesheet"/>
+<link href="./css/iconize.css" rel="stylesheet"/>
+<link href="./css/project.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+</head>
+<body>
+<div id="content">
+<div id="content-inner">
+<div class="section head">
+<h1><a href="">A2E: Black-box Anti-adversarial Example based Watermarking to Verify Federated Unlearning</a></h1>
+<h2>IEEE Transactions on Dependable and Secure Computing (TDSC), 2025</h2>
+<div class="authors"><a href="">Xiangshan Gao</a><sup>1</sup>
+<tab></tab><a href="">Jingyi Wang</a><sup>1</sup>
+<tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>1</sup>
+<tab></tab><a href="">Jialuo Chen</a><sup>1</sup>
+<tab></tab><a href="">Peng Cheng</a><sup>1</sup>
+<tab></tab><a href="">Jiming Chen</a><sup>1</sup>
+<tab></tab>
+<div class="affiliations"></div>
+<p>1. Zhejiang University </p>
+</div>
+</div>
+<div class="framework">
+<center><img src="./projects/A2E/overview.png" width="90%"/></center>
+</div>
+<div class="section abstract">
+<h2>Abstract</h2><br/>
+<p>—Machine unlearning is the primary way to ﬁght for the “right to be forgotten” in machine learning ﬁeld, which is promoted among multiple privacy legislations, such as GDPR and CCPA. However, the latest work has shown that machine unlearning in deep learning cannot be easily veriﬁed, making it challenging for the data owners to be convinced that their data has indeed been deleted as claimed. This is especially problematic for federated learning (FL), where a number of participants jointly train a global model while each participant should be free to join and leave the federation as they wish. However, the lack of a reliable approach to verify unlearning in FL will no doubt discourage certain users from joining the federation. In this work, we propose A2E, a black-box watermarking scheme from a leaving participant’s perspective to realize veriﬁable federated unlearning which incurs minimum impact and no security threats to vanilla FL. The key idea is to leverage adversarial training to inject the anti-adversarial example (A2E) characteristic into the uploaded model updates of the last contribution round as the watermark of the leaving participant. Then, we verify whether the server has indeed executed the effective unlearning, with the newly developed probabilistic quantiﬁcation of unlearning conﬁdence, by checking the unlearned global model’s resistance to the specially generated watermark-dependent adver- sarial examples of the leaver . We conducted large-scale experiments on various popular datasets (including natural images, medical im- ages, and speech) and model structures (including LeNet, ResNet, VGG, and LSTM). The results conﬁrm the effectiveness of A2E in verifying federated unlearning with a high conﬁdence. We also show that A2E is robust against multiple adaptive strategies from the adversarial server and participants.</p>
+</div>
+<div class="section info">
+<h2>Resources </h2><br/>
+<div class="res-collection">
+<div class="col"><a class="res-link" href="./projects/A2E/A2E.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+<div class="col"><img class="res-img" src="./img/ArXiv_logo.png"/></div>
+<div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+<div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+<div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+<div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+</div>
+</div>
+<div class="section citation">
+<h2>Citation </h2>
+<div class="section bibtex">
+<pre> @inproceedings{GWZCCC25,
+    author = {Xiangshan Gao and Jingyi Wang and Zhikun Zhang and Jialuo Chen and Peng Cheng and Jiming Chen},
+    title = {{A2E: Black-box Anti-adversarial Example based Watermarking to Verify Federated Unlearning}},
+    booktitle = {{Transactions on Dependable and Secure Computing}},
+    publisher = {IEEE},
+    year = {2025},
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<script src="./js/script.js"> </script>
+</body>
+</html>

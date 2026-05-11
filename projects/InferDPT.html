@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+
+<html>
+<head>
+<title>InferDPT</title>
+<link href="./css/css" rel="stylesheet"/>
+<link href="./css/iconize.css" rel="stylesheet"/>
+<link href="./css/project.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+</head>
+<body>
+<div id="content">
+<div id="content-inner">
+<div class="section head">
+<h1><a href="">InferDPT: Privacy-preserving Inference for Black-box Large Language Models</a></h1>
+<h2>IEEE Transactions on Dependable and Secure Computing (TDSC), 2025</h2>
+<div class="authors"><a href="">Meng Tong</a><sup>1</sup>
+<tab></tab><a href="">Kejiang Chen</a><sup>1</sup>
+<tab></tab><a href="">Jie Zhang</a><sup>2</sup>
+<tab></tab><a href="">Yuang Qi</a><sup>1</sup>
+<tab></tab><a href="">Weiming Zhang</a><sup>1</sup>
+<tab></tab><a href="">Nenghai Yu</a><sup>1</sup>
+<tab></tab><a href="">Tianwei Zhang</a><sup>3</sup>
+<tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>4</sup>
+<tab></tab>
+<div class="affiliations"></div><p>1. University of Science and Technology of China 2. CFAR, A*STAR, Singapore 3. Nanyang Technological University 4. Zhejiang University </p></div>
+</div>
+<div class="framework">
+<center><img src="./projects/InferDPT/overview.png" width="90%"/></center>
+</div>
+<div class="section abstract">
+<h2>Abstract</h2><br/>
+<p>Large language models (LLMs), represented by ChatGPT, have greatly simplified text generation tasks. However, they have also raised concerns about privacy risks such as data leakage and unauthorized information collection. Existing solutions for privacy-preserving inference face practical challenges related to computational time and communication costs. In this paper, we propose InferDPT, the first practical framework for privacy-preserving Inference of black-box LLMs, implementing Differential Privacy in Text generation. InferDPT comprises two key modules: the perturbation module utilizes the differentially private mechanism to generate a perturbed prompt, facilitating privacy-preserving inference with black-box LLMs; the extraction module, inspired by knowledge distillation and observed phenomena, extracts coherent and consistent text from the perturbed generation result, ensuring successful text generation completion. To achieve a better balance between utility and privacy protection, we introduce RANTEXT, a novel differentially private mechanism integrated into the perturbation module of InferDPT, which introduces the concept of random adjacency lists for text perturbation within the prompt. Experimental results across three datasets demonstrate that the text generation quality of InferDPT is comparable to that of non-private GPT-4, and RANTEXT surpasses existing state-of-the-art mechanisms, namely, SANTEXT+ and CUSTEXT+ in the trade-off between privacy and utility. Even with a privacy parameter epsilon value of 6.0, RANTEXT achieves an average privacy protection level of exceeding 0.90 against embedding inversion attacks, which is 0.58x higher than that of SANTEXT+ and 3.35x higher than that of CUSTEXT+.</p>
+</div>
+<div class="section info">
+<h2>Resources </h2><br/>
+<div class="res-collection">
+<div class="col"><img class="res-img" src="./img/PDF_logo.jpeg"/></div>
+<div class="col"><img class="res-img" src="./img/ArXiv_logo.png"/></div>
+<div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+<div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+<div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+<div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+</div>
+</div>
+<div class="section citation">
+<h2>Citation </h2>
+<div class="section bibtex">
+<pre> @inproceedings{TCZQZYZZ25,
+    author = {Meng Tong and Kejiang Chen and Jie Zhang and Yuang Qi and Weiming Zhang and Nenghai Yu and Tianwei Zhang and Zhikun Zhang},
+    title = {{InferDPT: Privacy-preserving Inference for Black-box Large Language Models}},
+    booktitle = {{Transactions on Dependable and Secure Computing}},
+    publisher = {IEEE},
+    year = {2025},
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<script src="./js/script.js"> </script>
+</body>
+</html>

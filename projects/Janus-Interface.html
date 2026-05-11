@@ -1,0 +1,65 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>Janus-Interface</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="https://arxiv.org/abs/2310.15469">The Janus Interface: How Fine-Tuning in Large Language Models Amplifies the Privacy Risks</a></h1>
+          <h2>ACM CCS 2024</h2>
+          <div class="authors"><a href="">Xiaoyi Chen</a><sup>1</sup>
+            <tab></tab><a href="">Siyuan Tang</a><sup>1</sup>
+            <tab></tab><a href="">Rui Zhu</a><sup>1</sup>
+            <tab></tab><a href="">Shijun Yan</a><sup>2</sup>
+            <tab></tab><a href="">Lei Jin</a><sup>2</sup>
+            <tab></tab><a href="">Zihao Wang</a><sup>1</sup>
+            <tab></tab><a href="">Liya Su</a><sup>2</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>3,4</sup>
+            <tab></tab><a href="">Xiaofeng Wang</a><sup>1</sup>
+            <tab></tab><a href="">Haixu Tang</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. Indiana University Bloomington 2. JD Cloud 3. Stanford University 4. CISPA Helmholtz Center for Information Security </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/Janus-Interface/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>The rapid advancements of large language models (LLMs) have raised public concerns about the privacy leakage of personally identifiable information (PII) within their extensive training datasets. Recent studies have demonstrated that an adversary could extract highly sensitive privacy data from the training data of LLMs with carefully designed prompts. However, these attacks suffer from the model's tendency to hallucinate and catastrophic forgetting (CF) in the pre-training stage, rendering the veracity of divulged PIIs negligible. In our research, we propose a novel attack, Janus, which exploits the fine-tuning interface to recover forgotten PIIs from the pre-training data in LLMs. We formalize the privacy leakage problem in LLMs and explain why forgotten PIIs can be recovered through empirical analysis on open-source language models. Based upon these insights, we evaluate the performance of Janus on both open-source language models and two latest LLMs, i.e., GPT-3.5-Turbo and LLaMA-2-7b. Our experiment results show that Janus amplifies the privacy risks by over 10 times in comparison with the baseline and significantly outperforms the state-of-the-art privacy extraction attacks including prefix attacks and in-context learning (ICL). Furthermore, our analysis validates that existing fine-tuning APIs provided by OpenAI and Azure AI Studio are susceptible to our Janus attack, allowing an adversary to conduct such an attack at a low cost.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><a class="res-link" href="./projects/Janus-Interface/Janus-Interface.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+            <div class="col"><a class="res-link" href="https://arxiv.org/abs/2310.15469"><img class="res-img" src="./img/ArXiv_logo.png"/></a></div>
+            <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{CTZY24,
+    author = {Xiaoyi Chen and Siyuan Tang and Rui Zhu and Shijun Yan and Lei Jin and Zihao Wang and Liya Su and Zhikun Zhang and Xiaofeng Wang and Haixu Tang},
+    title = {{The Janus Interface: How Fine-Tuning in Large Language Models Amplifies the Privacy Risks}},
+    booktitle = {{CCS}},
+    publisher = {ACM},
+    year = {2024},
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>

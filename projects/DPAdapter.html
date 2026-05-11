@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>DPAdapter</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="https://arxiv.org/abs/2403.02571">DPAdapter: Improving Differentially Private Deep Learning through Noise Tolerance Pre-training</a></h1>
+          <h2>USENIX Security 2024</h2>
+          <div class="authors"><a href="">Zihao Wang</a><sup>1</sup>
+            <tab></tab><a href="">Rui Zhu</a><sup>1</sup>
+            <tab></tab><a href="">Dongruo Zhou</a><sup>1</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>3</sup>
+            <tab></tab><a href="">John Mitchell</a><sup>2</sup>
+            <tab></tab><a href="">Haixu Tang</a><sup>1</sup>
+            <tab></tab><a href="">Xiaofeng Wang</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. Indiana University Bloomington 2. Stanford University 3. CISPA Helmholtz Center for Information Security </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/DPAdapter/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>Recent developments have underscored the critical role of differential privacy (DP) in safeguarding individual data for training machine learning models. However, integrating DP oftentimes incurs significant model performance degradation due to the perturbation introduced into the training process, presenting a formidable challenge in the differentially private machine learning (DPML) field. To this end, several mitigative efforts have been proposed, typically revolving around formulating new DPML algorithms or relaxing DP definitions to harmonize with distinct contexts. In spite of these initiatives, the diminishment induced by DP on models, particularly large-scale models, remains substantial and thus, necessitates an innovative solution that adeptly circumnavigates the consequential impairment of model utility. In response, we introduce DPAdapter, a pioneering technique designed to amplify the model performance of DPML algorithms by enhancing parameter robustness. The fundamental intuition behind this strategy is that models with robust parameters are inherently more resistant to the noise introduced by DP, thereby retaining better performance despite the perturbations. DPAdapter modifies and enhances the sharpness-aware minimization (SAM) technique, utilizing a two-batch strategy to provide a more accurate perturbation estimate and an efficient gradient descent, thereby improving parameter robustness against noise. Notably, DPAdapter can act as a plug-and-play component and be combined with existing DPML algorithms to further improve their performance. Our experiments show that DPAdapter vastly enhances state-of-the-art DPML algorithms, increasing average accuracy from 72.92% to 77.09% with a privacy budget of ε = 4.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><a class="res-link" href="./projects/DPAdapter/DPAdapter.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+            <div class="col"><a class="res-link" href="https://arxiv.org/abs/2403.02571"><img class="res-img" src="./img/ArXiv_logo.png"/></a></div>
+            <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{WZZZMTW24,
+    author = {Zihao Wang and Rui Zhu and Dongruo Zhou and Zhikun Zhang and John Mitchell and Haixu Tang and Xiaofeng Wang},
+    title = {{DPAdapter: Improving Differentially Private Deep Learning through Noise Tolerance Pre-training}},
+    booktitle = {{USENIX Security}},
+    publisher = {USENIX Association},
+    year = {2024},
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>

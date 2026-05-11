@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>Real-Time-LDP-Trajectory</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="">Real-Time Trajectory Synthesis with Local Differential Privacy</a></h1>
+          <h2>ICDE 2024</h2>
+          <div class="authors"><a href="">Yujia Hu</a><sup>1</sup>
+            <tab></tab><a href="">Yuntao Du</a><sup>2</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>1</sup>
+            <tab></tab><a href="">Ziquan Fang</a><sup>1</sup>
+            <tab></tab><a href="">Lu Chen</a><sup>1</sup>
+            <tab></tab><a href="">Kai Zheng</a><sup>3</sup>
+            <tab></tab><a href="">Yunjun Gao</a><sup>1</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. Zhejiang University 2. Purdue University 3. University of Electronic Science and Technology of China </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/Real-Time-LDP-Trajectory/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>Trajectory streams are being generated from location-aware devices, such as smartphones and in-vehicle navigation systems. Due to the sensitive nature of the location data, directly sharing user trajectories suffers from privacy leakage issues. Local differential privacy (LDP), which perturbs sensitive data on the user side before it is shared or analyzed, emerges as a promising solution for private trajectory stream collection and analysis. Unfortunately, existing stream release approaches often neglect the rich spatial-temporal context information within trajectory streams, resulting in suboptimal utility and limited types of downstream applications. To this end, we propose RetraSyn, a novel real-time trajectory synthesis framework, which is able to perform on-the-fly trajectory synthesis based on the mobility patterns privately extracted from users' trajectory streams. Thus, downstream trajectory analysis can be performed on high-utility synthesized data with privacy protection. We also take the genuine behaviors of real-world mobile travelers into consideration, ensuring authenticity and practicality. The key components of RetraSyn include the global mobility model, dynamic mobility update mechanism, real-time synthesis, and adaptive allocation strategy. We conduct extensive experiments on multiple real-world and synthetic trajectory datasets under various location-based utility metrics, encompassing both streaming and historical scenarios. The empirical results demonstrate the superiority and versatility of our proposed framework.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><img class="res-img" src="./img/PDF_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/ArXiv_logo.png"/></div>
+            <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{HDZFCZG24,
+    author = {Yujia Hu and Yuntao Du and Zhikun Zhang and Ziquan Fang and Lu Chen and Kai Zheng and Yunjun Gao},
+    title = {{Real-Time Trajectory Synthesis with Local Differential Privacy}},
+    booktitle = {{ICDE}},
+    publisher = {IEEE},
+    year = {2024},
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>

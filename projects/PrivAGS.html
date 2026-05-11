@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+
+<html>
+<head>
+<title>PrivAGS</title>
+<link href="./css/css" rel="stylesheet"/>
+<link href="./css/iconize.css" rel="stylesheet"/>
+<link href="./css/project.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+</head>
+<body>
+<div id="content">
+<div id="content-inner">
+<div class="section head">
+<h1><a href="">PrivAGS: Differentially Private Attributed Graph Synthesis</a></h1>
+<h2>ACM SIGMOD 2026</h2>
+<div class="authors"><a href="">Shuzhan Ye</a><sup>1</sup>
+<tab></tab><a href="">Lu Chen</a><sup>1</sup>
+<tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>1</sup>
+<tab></tab><a href="">Yunjun Gao</a><sup>1</sup>
+<tab></tab><a href="">Yuxiang Wang</a><sup>2</sup>
+<tab></tab><a href="">Xiaoliang Xu</a><sup>2</sup>
+<tab></tab>
+<div class="affiliations"></div>
+<p>1. Zhejiang University 2. Hangzhou Dianzi University </p>
+</div>
+</div>
+<div class="framework">
+<center><img src="./projects/PrivAGS/overview.png" width="90%"/></center>
+</div>
+<div class="section abstract">
+<h2>Abstract</h2><br/>
+<p>Attributed graphs are extensively utilized in marketing, friend recommendations, disease prediction, etc. In attributed graphs, nodes are associated with attributes to enrich the graph representation, while edges indicate relationships between nodes. However, ensuring data privacy when publishing attributed graphs is a significant challenge due to the sensitive nature of both attributes and relationships. Existing methods fail to preserve graph structures effectively and neglect correlations among node attributes, leading to diminished utility for published synthetic graphs. To address these issues, we propose PrivAGS, a framework for publishing attributed graphs with Rényi Differential Privacy (RDP) guarantees. PrivAGS reconstructs graph structures and attributes based on community structures to capture tightly connected features. We propose a bounded Gaussian threshold mechanism to preserve attribute correlations and utilize probabilistic graph models with optimized inference structures to infer distributions and release node attributes. Additionally, PrivAGS introduces a new structural model, MCEG, to capture clustering structures and enable efficient graph reconstruction. Extensive experiments on five real-world datasets show that PrivAGS generates privacy-preserving, high-utility synthetic data.</p>
+</div>
+<div class="section info">
+<h2>Resources </h2><br/>
+<div class="res-collection">
+<div class="col"><a class="res-link" href="./projects/PrivAGS/PrivAGS.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+<div class="col"><img class="res-img" src="./img/ArXiv_logo.png"/></div>
+<div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
+<div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+<div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+<div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+</div>
+</div>
+<div class="section citation">
+<h2>Citation </h2>
+<div class="section bibtex">
+<pre> @inproceedings{YCZGWX26,
+    author = {Shuzhan Ye and Lu Chen and Zhikun Zhang and Yunjun Gao and Yuxiang Wang and Xiaoliang Xu},
+    title = {{PrivAGS: Differentially Private Attributed Graph Synthesis}},
+    booktitle = {{SIGMOD}},
+    publisher = {ACM},
+    year = {2026},
+}</pre>
+</div>
+</div>
+</div>
+</div>
+<script src="./js/script.js"> </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html >
+<html> 
+  <head> 
+    <title>Code-Unlearning</title>
+    <link rel="stylesheet" href="./css/css"/>
+    <link rel="stylesheet" href="./css/iconize.css"/>
+    <link rel="stylesheet" href="./css/project.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"> </script>
+  </head>
+  <body> 
+    <div id="content"> 
+      <div id="content-inner"> 
+        <div class="section head">
+          <h1><a href="https://arxiv.org/abs/2509.13755">Scrub It Out! Erasing Sensitive Memorization in Code Language Models via Machine Unlearning</a></h1>
+          <h2>IEEE ICSE 2026</h2>
+          <div class="authors"><a href="">Zhaoyang Chu</a><sup>1</sup>
+            <tab></tab><a href="">Yao Wan</a><sup>1</sup>
+            <tab></tab><a href="http://zhangzhk.com/">Zhikun Zhang</a><sup>2</sup>
+            <tab></tab><a href="">Di Wang</a><sup>3</sup>
+            <tab></tab><a href="">Zhou Yang</a><sup>4</sup>
+            <tab></tab><a href="">Hongyu Zhang</a><sup>5</sup>
+            <tab></tab><a href="">Pan Zhou</a><sup>1</sup>
+            <tab></tab><a href="">Xuanhua Shi</a><sup>1</sup>
+            <tab></tab><a href="">Hai Jin</a><sup>1</sup>
+            <tab></tab><a href="">David Lo</a><sup>6</sup>
+            <tab></tab>
+            <div class="affiliations"></div>
+            <p>1. Huazhong University of Science and Technology 2. Zhejiang University 3. King Abdullah University of Science and Technology 4. University of Alberta 5. Chongqing University 6. Singapore Management University </p>
+          </div>
+        </div>
+        <div class="framework"> 
+          <center><img src="./projects/Code-Unlearning/overview.png" width="90%"/></center>
+        </div>
+        <div class="section abstract"> 
+          <h2>Abstract</h2><br/>
+          <p>While Code Language Models (CLMs) have demonstrated superior performance in software engineering tasks such as code generation and summarization, recent empirical studies reveal a critical privacy vulnerability: these models exhibit unintended memorization of sensitive training data, enabling verbatim reproduction of confidential information when specifically prompted. To address this issue, several approaches, including training data de-duplication and differential privacy augmentation, have been proposed. However, these methods require full-model retraining for deployed CLMs, which incurs substantial computational costs. In this paper, we aim to answer the following research question: Can sensitive information memorized by CLMs be erased effectively and efficiently? We conduct a pioneering investigation into erasing sensitive memorization in CLMs through machine unlearning, a post-hoc modification method that removes specific information from trained models without requiring full retraining. Specifically, we first quantify the memorization risks of sensitive data within CLM training datasets and curate a high-risk dataset of 50,000 sensitive memorized samples as unlearning targets. We study two widely used gradient ascent-based unlearning approaches: the vanilla and constraint-based methods, and introduce CodeEraser, an advanced variant that selectively unlearns sensitive memorized segments in code while preserving the structural integrity and functional correctness of the surrounding code. Extensive experiments on three families of CLMs, i.e., CodeParrot, CodeGen-Mono, and Qwen2.5-Coder, validate the effectiveness and efficiency of CodeEraser in erasing targeted sensitive memorization while maintaining model utility.</p>
+        </div>
+        <div class="section info"> 
+          <h2>Resources </h2><br/>
+          <div class="res-collection"> 
+            <div class="col"><a class="res-link" href="./projects/Code-Unlearning/Code-Unlearning.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+            <div class="col"><a class="res-link" href="https://arxiv.org/abs/2509.13755"><img class="res-img" src="./img/ArXiv_logo.png"/></a></div>
+            <div class="col"><a class="res-link" href="https://github.com/Zhaoyang-Chu/code-unlearning"><img class="res-img" src="./img/GitHub_logo.jpeg"/></a></div>
+            <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
+            <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
+            <div class="col"><img class="res-img" src="./img/WeChat_logo.jpeg"/></div>
+          </div>
+        </div>
+        <div class="section citation"> 
+          <h2>Citation </h2>
+          <div class="section bibtex"> 
+            <pre> @inproceedings{CWZW26,
+    author = {Zhaoyang Chu and Yao Wan and Zhikun Zhang and Di Wang and Zhou Yang and Hongyu Zhang and Pan Zhou and Xuanhua Shi and Hai Jin and David Lo},
+    title = {{Scrub It Out! Erasing Sensitive Memorization in Code Language Models via Machine Unlearning}},
+    booktitle = {{ICSE}},
+    publisher = {IEEE},
+    year = {2026},
+}</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"> </script>
+  </body>
+</html>
