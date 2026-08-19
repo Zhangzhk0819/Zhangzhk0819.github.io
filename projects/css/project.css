@@ -184,8 +184,12 @@ div.content-primary .teaser p img {
     margin-top: 0.5em;
 }
 
+.bibtex {
+    position: relative;
+}
+
 .bibtex pre {
-    margin-bottom: 0;
+    margin: 0;
     font-family: Consolas, Monaco, monospace;
     white-space: pre-wrap;
     /* CSS 3 */
@@ -198,11 +202,67 @@ div.content-primary .teaser p img {
     word-wrap: break-word;
     /* IE 5.5+ */
     /* width: 90%; */
-    color: #444;
-    padding: 10px;
-    background: #eee;
-    border: 1px solid #ccc;
+    color: #172033;
+    padding: 24px 20px 18px;
+    background: #EAF2FF;
+    border: 1px solid #C9D8EF;
+    border-radius: 6px;
     overflow: auto;
+}
+
+.citation-copy-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid #D4DFEF;
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: #3D4B61;
+    font-family: inherit;
+    font-size: 10pt;
+    line-height: 1.2;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(24, 52, 95, 0.08);
+}
+
+.citation-copy-icon {
+    position: relative;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+}
+
+.citation-copy-icon::before,
+.citation-copy-icon::after {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border: 1px solid #64748B;
+    border-radius: 2px;
+    content: '';
+}
+
+.citation-copy-icon::before {
+    top: 0;
+    left: 0;
+}
+
+.citation-copy-icon::after {
+    right: 0;
+    bottom: 0;
+    background: #FFFFFF;
+}
+
+.citation-copy-button:hover,
+.citation-copy-button:focus {
+    border-color: #A9BCD8;
+    background: #F8FBFF;
+    color: #1F3658;
+    outline: none;
 }
 
 .acknowledgments {
