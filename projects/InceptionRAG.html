@@ -17,7 +17,7 @@
     <div id="content">
       <div id="content-inner">
         <div class="section head">
-          <h1><a href="">InceptionRAG: Stealthy Poisoning Attack Against Retrieval-Augmented Generation</a></h1>
+          <h1><a href="https://arxiv.org/abs/2609.16818">InceptionRAG: Stealthy Poisoning Attack Against Retrieval-Augmented Generation</a></h1>
           <h2><a href="https://www.sigsac.org/ccs/CCS2026/">ACM CCS 2026</a></h2>
           <div class="authors"><a href="">Jiachang Zhang</a><sup>1</sup>
             <tab></tab><a href="">Min Chen</a><sup>2</sup>
@@ -34,13 +34,13 @@
         </div>
         <div class="section abstract">
           <h2>Abstract</h2><br/>
-          <p>The abstract will be added after the public paper or preprint becomes available.</p>
+          <p><i>Retrieval-augmented generation</i> (RAG) systems enhance <i>large language models</i> (LLMs) with external knowledge but have been demonstrated vulnerable to corpus poisoning. Existing poisoning attacks against RAG largely focus on single-point <i>explicit injection</i>, where the malicious payload is fully encapsulated within a single document. Consequently, recent mitigation mechanisms have evolved to identify and diminish these threats effectively. In this paper, we first verify that existing mitigation mechanisms are insufficient for a new class of threats: <i>indirect logic induction</i>. Motivated by this observation, we introduce InceptionRAG, a stealthy attack mechanism that subverts the standard attack paradigm. Instead of injecting explicit malicious payloads, InceptionRAG fragments it into a chain of dormant passages. These passages appear harmless and can bypass existing mitigation mechanisms when examined separately. However, when retrieved together, they trigger LLMs to self-deduce target misinformation via multi-hop reasoning. To further improve the applicability of InceptionRAG in <i>black-box</i> settings, we propose <i>zeroth-order suffix optimization</i> (ZOSO) to automate the generation of authoritative suffixes. Extensive evaluations across three datasets and three LLMs demonstrate that InceptionRAG achieves an attack success rate exceeding 80% even under rigorous adversarial constraints. In particular, InceptionRAG shows superior evasion capabilities, effectively bypassing established defenses that mitigate traditional single-document injections. Our findings expose a concerning paradox: The stronger reasoning capabilities of LLMs increase their vulnerability to reasoning-based poisoning attacks. To mitigate the potential misuse of InceptionRAG, we propose a document isolation-based defense HODOR, which effectively mitigates the attack by decoupling the adversarial logical dependencies.</p>
         </div>
         <div class="section info">
           <h2>Resources </h2><br/>
           <div class="res-collection">
-            <div class="col"><img class="res-img" src="./img/PDF_logo.jpeg"/></div>
-            <div class="col"><img class="res-img" src="./img/ArXiv_logo.png"/></div>
+            <div class="col"><a class="res-link" href="./projects/InceptionRAG/InceptionRAG.pdf"><img class="res-img" src="./img/PDF_logo.jpeg"/></a></div>
+            <div class="col"><a class="res-link" href="https://arxiv.org/abs/2609.16818"><img class="res-img" src="./img/ArXiv_logo.png"/></a></div>
             <div class="col"><img class="res-img" src="./img/GitHub_logo.jpeg"/></div>
             <div class="col"><img class="res-img" src="./img/PPT_logo.webp"/></div>
             <div class="col"><img class="res-img" src="./img/YouTube_logo.jpeg"/></div>
